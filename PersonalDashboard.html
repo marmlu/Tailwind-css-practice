@@ -45,7 +45,7 @@
       
         </div>
     </aside>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ml-56 mt-28">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ml-56 mt-28 ">
       <div class="bg-white shadow-lg p-5 rounded">
         <h1 class=" text-xl font-bold">REVENUE</h1>
         <p class="text-gray-600 py-2">Earnings this month</p>
@@ -62,35 +62,46 @@
         <p>32 tasks remaining</p>
       </div>
       </div>
-      <div class="flex flex-col items-center">
-      <h1 class=" text-blue-400 text-3xl p-5 ml-56 font-semibold ">Recent Users</h1>
-      <table class="ml-56 border border-black" >
-        <tr>
-          <th class="ml-56 border border-black p-2">Name</th>
-          <th class="ml-56 border border-black p-2">Email</th>
-          <th class="ml-56 border border-black p-2">Role</th>
-          <th class="ml-56 border border-black p-2">Status</th>
-        </tr>
-        <tr >
-          <td class="ml-56 border border-black p-2">Nuhamin</td>
-          <td class="ml-56 border border-black p-2">Nuha@gmail.com</td>
-          <td class="ml-56 border border-black p-2">Admin</td>
-          <td class="ml-56 border border-black p-2">Active</td>
-        </tr>
-        <tr >
-          <td class="ml-56 border border-black p-2">Jhon</td>
-          <td class="ml-56 border border-black p-2">Jho@gmail.com</td>
-          <td class="ml-56 border border-black p-2">User</td>
-          <td class="ml-56 border border-black p-2">Pending</td>
-        </tr>
-        <tr >
-          <td class="ml-56 border border-black p-2">Ribka</td>
-          <td class="ml-56 border border-black p-2">Rib@gmail.com</td>
-          <td class="ml-56 border border-black p-2">Editor</td>
-          <td class="ml-56 border border-black p-2">Active</td>
-        </tr>
-      
-      </table>
-      </div>
+      <div class="ml-0 md:ml-56 mt-10 p-6">
+
+  <h1 class="text-blue-400 text-2xl font-semibold mb-4">
+    Recent Users
+  </h1>
+
+  <div class="overflow-x-auto">
+    <table class="w-full border border-gray-300 rounded">
+
+      <tr class="bg-gray-100 text-left">
+        <th class="border border-gray-300 p-3">Name</th>
+        <th class="border border-gray-300 p-3">Email</th>
+        <th class="border border-gray-300 p-3">Role</th>
+        <th class="border border-gray-300 p-3">Status</th>
+      </tr>
+
+      <tr>
+        <td class="border border-gray-300 p-3">Nuhamin</td>
+        <td class="border border-gray-300 p-3">nuha@gmail.com</td>
+        <td class="border border-gray-300 p-3">Admin</td>
+        <td class="border border-gray-300 p-3 text-green-600">Active</td>
+      </tr>
+
+      <tr>
+        <td class="border border-gray-300 p-3">John</td>
+        <td class="border border-gray-300 p-3">john@gmail.com</td>
+        <td class="border border-gray-300 p-3">User</td>
+        <td class="border border-gray-300 p-3 text-yellow-500">Pending</td>
+      </tr>
+
+      <tr>
+        <td class="border border-gray-300 p-3">Ribka</td>
+        <td class="border border-gray-300 p-3">rib@gmail.com</td>
+        <td class="border border-gray-300 p-3">Editor</td>
+        <td class="border border-gray-300 p-3 text-red-600">Suspended</td>
+      </tr>
+
+    </table>
+  </div>
+
+</div>
   </body>
 </html>
