@@ -98,10 +98,29 @@
         <td class="border border-gray-300 p-3">Editor</td>
         <td class="border border-gray-300 p-3 text-red-600">Suspended</td>
       </tr>
-
     </table>
   </div>
-
+</div>
+<div class="ml-0 md:ml-56 p-6 max-w-lg">
+  <h1 class="font-semibold text-blue-400 text-2xl ">Add new user</h1>
+  <form class="pt-4">
+    <input type="text" placeholder="Enter name" class="border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400 w-full p-2 my-2">
+    <input type="text" placeholder="Enter email" class="border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400 w-full p-2 my-2">
+    <lable>Role:</lable>
+    <select class="border-gray-500 rounded focus:outline-none focus:ring-2 focus:ring-green-400 p-1 m-1">
+      <option >Admin</option>
+      <option>User</option>
+      <option>Editor</option>
+    </select>
+    <br>
+    <lable>Status:</lable>
+    <select class="border-gray-500 rounded focus:outline-none focus:ring-2 focus:ring-green-400 p-1 m-1">
+      <option>Active</option>
+      <option>Pending</option>
+      <option>Suspended</option>
+    </select>
+ 
+  </form>
 </div>
   </body>
 </html>
