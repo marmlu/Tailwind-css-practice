@@ -129,25 +129,49 @@
   </div>
 </div>
 <div class="ml-0 md:ml-56 p-6 max-w-lg">
-  <h1 class="font-semibold text-blue-400 text-2xl ">Add new user</h1>
-  <form class="pt-4">
-    <input type="text" placeholder="Enter name" class="border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400 w-full p-2 my-2">
-    <input type="text" placeholder="Enter email" class="border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400 w-full p-2 my-2">
-    <label>Role:</label>
-    <select class="border-gray-500 rounded focus:outline-none focus:ring-2 focus:ring-green-400 p-1 m-1">
-      <option >Admin</option>
-      <option>User</option>
-      <option>Editor</option>
-    </select>
-    <br>
-    <label>Status:</label>
-    <select class="border-gray-500 rounded focus:outline-none focus:ring-2 focus:ring-green-400 p-1 m-1">
-      <option>Active</option>
-      <option>Pending</option>
-      <option>Suspended</option>
-    </select>
- 
+
+  <h1 class="font-semibold text-blue-400 text-2xl mb-4">
+    Add New User
+  </h1>
+
+  <form class="space-y-4">
+
+    <input 
+      type="text" 
+      placeholder="Enter name"
+      class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+    >
+
+    <input 
+      type="email" 
+      placeholder="Enter email"
+      class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+    >
+
+    <div>
+      <label class="block mb-1 font-medium">Role</label>
+      <select class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-green-400">
+        <option>Admin</option>
+        <option>User</option>
+        <option>Editor</option>
+      </select>
+    </div>
+
+    <div>
+      <label class="block mb-1 font-medium">Status</label>
+      <select class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-green-400">
+        <option>Active</option>
+        <option>Pending</option>
+        <option>Suspended</option>
+      </select>
+    </div>
+
+    <button class="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 transition">
+      Add User
+    </button>
+
   </form>
+
 </div>
   </body>
 </html>
