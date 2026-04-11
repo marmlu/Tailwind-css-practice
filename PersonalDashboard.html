@@ -7,15 +7,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-50">
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
     <nav class="bg-black fixed top-0 w-full z-50">
       <div class="flex justify-between p-3 items-center">
+        <label
+          for="menu-toggle"
+          class="text-white text-2xl md:hidden cursor-pointer"
+        >
+          ☰
+        </label>
         <h1 class="font-bold text-3xl text-yellow-400">
           Nu<span class="text-blue-400">ha</span>Min <br />
           <span class="text-blue-400">Das</span>hboa<span class="text-blue-400"
             >rd</span
           >
         </h1>
-        <div class="text-white flex gap-6">
+        <div class="hidden md:flex text-white gap-6">
           <a href="#" class="font-semibold hover:text-yellow-400">Home</a>
           <a href="#" class="font-semibold hover:text-yellow-400">Dashboard</a>
           <a href="#" class="font-semibold hover:text-yellow-400">Analytics</a>
@@ -34,7 +41,7 @@
     </nav>
 
     <aside
-      class="bg-gray-800 w-56 h-screen overflow-y-auto fixed top-16 left-0 pt-6 hidden md:block"
+      class="bg-gray-800 w-56 h-screen fixed top-16 left-0 pt-6 transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:translate-x-0"
     >
       <div class="flex flex-col text-center">
         <p class="p-4 text-gray-400 font-extrabold">MAIN</p>
